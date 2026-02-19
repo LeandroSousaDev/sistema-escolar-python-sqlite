@@ -1,5 +1,5 @@
 import menu
-from rotas import curso, aluno
+from rotas import curso, aluno, professor
 
 
 while True:
@@ -34,9 +34,20 @@ while True:
         if operacao == "0":
             break
 
-
     if opcao == "3":
         menu.menu_professores()
+        operacao = input("Escolha a operação: ")
+        if operacao == "1":
+            professor.criar_professor()
+        if operacao == "2":
+            professor.listar_professor()
+        if operacao == "3":
+            professor.alterar_professor()
+        if operacao == "4":
+            professor.deletar_professor()
+        if operacao == "0":
+            break
+
     if opcao == "4":
         menu.menu_contratos()
     if opcao == "5":
