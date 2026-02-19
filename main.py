@@ -1,5 +1,6 @@
 import menu
-from rotas import curso
+from rotas import curso, aluno
+
 
 while True:
     menu.menu_principal()
@@ -7,6 +8,17 @@ while True:
 
     if opcao == "1":
         menu.menu_alunos()
+        operacao = input("Escolha a operação: ")
+        if operacao == "1":
+            aluno.criar_aluno()
+        if operacao == "2":
+            aluno.listar_aluno()
+        if operacao == "3":
+            aluno.atualizar_aluno()
+        if operacao == "4":
+            aluno.deletar_aluno()
+        if operacao == "0":
+            break
 
     if opcao == "2":
         menu.menu_cursos()
