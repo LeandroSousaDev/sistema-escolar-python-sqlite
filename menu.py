@@ -46,7 +46,6 @@ def menu_prontuarios():
     2- Listar prontuarios
     3- Atualizar prontuario
     4- Deletar prontuario
-    5- Designar professor ao curso
     0- Sair
     """)
 
@@ -57,5 +56,6 @@ def menu_contratos():
     2- Listar contratos
     3- Atualizar contrato
     4- Deletar contrato
+    5- Designar professor ao curso
     0- Sair
     """)
