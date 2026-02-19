@@ -1,5 +1,5 @@
 import menu
-from rotas import curso, aluno, professor, contrato
+from rotas import curso, aluno, professor, contrato, prontuario
 
 
 while True:
@@ -66,6 +66,17 @@ while True:
 
     if opcao == "5":
         menu.menu_prontuarios()
+        operacao = input("Escolha a operação: ")
+        if operacao == "1":
+            prontuario.criar_prontuario()
+        if operacao == "2":
+            prontuario.listar_prontuario()
+        if operacao == "3":
+            prontuario.alterar_prontuario()
+        if operacao == "4":
+            prontuario.deletar_prontuario()
+        if operacao == "0":
+            break
 
     if opcao == "0":
         break
