@@ -22,10 +22,13 @@ def atualizar_curso():
     id_curso = input("Digite o id do curso: ")
     nome = input("Digite o nome do curso: ")
     carga_horaria = input("Digite a carga horaria: ")
-    cursor.execute("""UPDATE Curso SET nome = ?, carga_horaria= ? WHERE id = ?""",
+
+    cursor.execute("""UPDATE Curso SET nome = ?, carga_horaria= ? WHERE id_curso = ?""",
                        (nome, carga_horaria, id_curso))
     conexao.commit()
 
 def deletar_curso():
     id_curso = input("Digite o id do curso: ")
-    cursor.execute("""DELETE FROM Curso WHERE id = ?""", (id_curso,))
+    cursor.execute("""DELETE FROM Curso WHERE id_curso = ?""",
+                   (id_curso,))
+    conexao.commit()
