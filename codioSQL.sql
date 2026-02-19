@@ -14,10 +14,9 @@ CREATE TABLE IF NOT EXISTS `Aluno` (
 
 DROP TABLE IF EXISTS Professor;
 CREATE TABLE IF NOT EXISTS `Professor` (
-  `id_professor` INTEGER AUTO INCREMENT not null,
+  `id_professor` INTEGER PRIMARY KEY AUTOINCREMENT,
   `nome` VARCHAR(100) NULL,
-  `formacao` VARCHAR(45) NULL,
-  PRIMARY KEY (`id_professor`))
+  `formacao` VARCHAR(45) NULL)
 
 -- Tabela: Contrato
 DROP TABLE IF EXISTS Contrato;
