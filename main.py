@@ -79,4 +79,5 @@ while True:
             break
 
     if opcao == "0":
+
         break
